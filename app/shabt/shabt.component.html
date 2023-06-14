@@ -1,0 +1,85 @@
+<header>
+  <!-- Top Navigation Starts -->
+  <nav class="container navbar navbar-expand-lg navbar-light bg-light mb-5">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/img/Logo (2).png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item pe-5">
+                      <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+                  </li>
+
+                  <li class="nav-item pe-5">
+                      <a class="nav-link" routerLink="/shabt">About </a>
+                  </li>
+
+                  <li class="nav-item pe-5">
+                    <a class="nav-link" routerLink="/products">Products</a>
+                </li>
+                
+                  <li class="nav-item pe-5">
+                      <a class="nav-link" routerLink="/cnts">Contacts</a>
+                  </li>
+
+              </ul>
+          </div>
+
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+
+
+            </form>
+          </div>
+
+
+          <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #f77118;"></i>&nbsp; &nbsp; &nbsp;
+
+          <div class="dropdown">
+            <a class="btn btn-light dropdown-toggle bnt" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-user fa-lg" aria-hidden="true"  ></i> &nbsp; Hello {{Username}}
+            </a>
+
+
+
+            <ul class="dropdown-menu">
+
+              <li><a class="dropdown-item fp" routerLink="/sigin">Logout</a></li>
+
+            </ul>
+
+          </div> &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+
+  </nav>
+
+
+  <!-- Top Navigation Ends -->
+
+  <!-- ========== ABOUT ========== -->
+  <article class="bg-light p-5 article-new">
+    <section class="new-product container-lg ">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="./assets/img/gif-new.gif" alt="" class="w-100" >
+        </div>
+        <div class="col-12 col-md-6 pt-2">
+          <h3>Penguin Fashion <br> <br><span class="text-danger">The world at your feet</span></h3>
+          <p class="pt-3 text-start">A shoe is an item of footwear intended to protect and comfort the human foot.</p>
+          <p class="text-start">They are often worn with a sock. Shoes are also used as an item of decoration ...</p>
+          <a routerLink="/products" class="btn btn-danger btn-danger-outline-success mt-3 justify-content">Buy Shoes</a>
+        </div>
+      </div>
+    </section>
+  </article>
+
+

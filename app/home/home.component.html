@@ -1,0 +1,200 @@
+<header>
+  <!-- Top Navigation Starts -->
+  <nav class="container navbar navbar-expand-lg navbar-light bg-light mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/projects">
+        <img src="./assets/img/Logo (2).png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item pe-5">
+            <a class="nav-link active" aria-current="page" routerLink="/projects">Home</a>
+          </li>
+
+          <li class="nav-item pe-5">
+            <a class="nav-link" routerLink="/shabt">About</a>
+          </li>
+
+          <li class="nav-item pe-5">
+            <a class="nav-link" routerLink="/products">Products</a>
+          </li>
+
+          <li class="nav-item pe-5">
+            <a class="nav-link" routerLink="/cnts">Contacts</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+
+
+      </form>
+    </div>
+
+
+    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #f77118;"></i>&nbsp; &nbsp; &nbsp;
+    <div class="dropdown">
+      <a class="btn btn-light dropdown-toggle bnt" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-user fa-lg" aria-hidden="true"  ></i> &nbsp; Hello {{Username}}
+      </a>
+
+
+
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item fp" routerLink="/signup">sign up</a></li>
+        <li><a class="dropdown-item fp" routerLink="/sigin">Sign in</a></li>
+        <li><a class="dropdown-item fp" routerLink="/sigin">Logout</a></li>
+
+      </ul>
+
+    </div>
+   &nbsp; &nbsp; &nbsp;
+
+    <i class="fa fa-shopping-cart fa-lg" aria-hidden="true" routerLink="/cart"></i>
+
+
+  </nav>
+
+
+  <!-- Top Navigation Ends -->
+
+
+
+  <!-- First Atrraction Starts -->
+  <div class="container pb-5 mb-5">
+
+    <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center justify-content-between">
+      <img class="order-2 order-md-1" src="./assets/img/Group 33092.png" alt="">
+      <div class="order-1 order-md-2 col-md-5">
+        <h1>
+          <span class="nike">WALK </span>
+          <br>
+          <span class="infinity">JUST DO IT </span>
+        </h1>
+        <p class="w-75"><b>Good shoes take you to good places.</b></p>
+        <button type="button" class="btn rounded-3 text-white px-4 py-2">
+          <i class="fas fa-shopping-cart pe-1" routerLink="/products">&nbsp; Buy Now</i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <!-- First Atrraction End -->
+</header>
+
+<footer class="footer-section">
+  <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div class="cta-text">
+                          <h4>Find us</h4>
+                          <span>Tamilnadu</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>0000000000</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="far fa-envelope-open"></i>
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>mail@info.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                      </div>
+                      <div class="footer-text">
+                          <p>This is my ecommerce website developed using html,css , angular ,ts and  API using get and post method.</p>
+                      </div>
+                      <div class="footer-social-icon">
+                          <span>Follow us</span>
+                          <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                          <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                          <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">about</a></li>
+                          <li><a href="#">products</a></li>
+                          <li><a href="#">portfolio</a></li>
+                          <li><a href="#">Contact</a></li>
+
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Subscribe</h3>
+                      </div>
+                      <div class="footer-text mb-25">
+                          <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                      </div>
+                      <div class="subscribe-form">
+                          <form action="#">
+                              <input type="text" placeholder="Email Address">
+                              <button><i class="fab fa-telegram-plane"></i></button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2023, All Right Reserved <a href="https://codepen.io/anupkumar92/">Dinesh</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Policy</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>

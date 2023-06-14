@@ -1,0 +1,106 @@
+<header>
+  <!-- Top Navigation Starts -->
+  <nav class="container navbar navbar-expand-lg navbar-light bg-light mb-5">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/img/Logo (2).png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item pe-5">
+                      <a class="nav-link active" aria-current="page" routerLink="/products">Home</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                      <a class="nav-link" routerLink="/products">Products</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                      <a class="nav-link" routerLink="/about">About Us</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                      <a class="nav-link" routerLink="/contact">Contacts</a>
+                  </li>
+
+              </ul>
+          </div>
+
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+
+
+            </form>
+          </div>
+
+
+          <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #f77118;"></i>&nbsp; &nbsp; &nbsp;
+
+          <i class="fa fa-user fa-lg" aria-hidden="true"></i>&nbsp; &nbsp; &nbsp;
+              <i class="fa fa-shopping-cart fa-lg" aria-hidden="true" style="color: #f38a12;" routerLink="/cart">{{totalitems}}</i>
+
+
+  </nav>
+
+
+  <!-- Top Navigation Ends -->
+
+
+  <div id="wrap" *ngFor="let x of casualList">
+    <div id="product_layout_1">
+      <div class="top">
+      <div class="product_images">
+        <div class="product_image_1">
+         <img [src]="x.imgUrl" class="card-img-top h-100 w-100" alt="...">
+        </div>
+        <div class="product_image_small">
+          <div class="product_image_2">
+             <img [src]="x.imgUrl" class="card-img-top h-100 w-100" alt="...">
+          </div>
+                    <div class="product_image_3">
+         <img [src]="x.imgUrl" class="card-img-top h-100 w-100" alt="...">
+          </div>
+                    <div class="product_image_4">
+           <img [src]="x.imgUrl" class="card-img-top h-100 w-100" alt="...">
+          </div>
+        </div>
+        </div>
+        <div class="product_info">
+          <h1> {{x.productName}}</h1><br><br>
+          <div class="price">
+
+          <h2 class="sale_price">{{x.Price | currency:'INR':true }}</h2>
+          </div><br>
+          <div class="rating">
+            <i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star-half-o fa-3x"></i><i class="fa fa-star-o fa-3x"></i>
+          </div><br>
+          <div class="product_description">
+          <p>{{x.Description}} </p>
+          </div>
+         <div class="related_info">
+           <span class="sku">SKU:1234567</span><span class="quantity">QTY:85</span>
+         </div><br>
+
+          <div class="buying">
+            <!-- <h6 >Quantity</h6>
+            <button class="qty-btn-minus btn-light" type="button"><i class="fa fa-minus"></i></button>&nbsp;
+            <input type="text" name="qty" value="0" class="input-qty" style="width: 10%;">&nbsp;
+            <button class="qty-btn-plus btn-light" type="button"><i class="fa fa-plus"></i></button><br><br> -->
+                 <div class="cart">
+                   <a  class="add" (click)="addtoCart(x)">Add to Cart <i class="fa fa-shopping-cart fa-lg"></i></a>
+                 </div>
+          </div>
+          </div>
+
+
+
+
+
+
+
+
+

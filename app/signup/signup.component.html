@@ -1,0 +1,47 @@
+<div class="body"><br><br><br><br>
+  <div class="container">
+    <div class="title">Sign up</div>
+    <form [formGroup]="loginform" name="form">
+      <div class="user_details">
+        <div class="input_pox">
+          <span class="datails">name </span>
+          <input type="text" placeholder="enter your name" formControlName="name" required>
+        </div>
+        <!-- <div class="input_pox">
+              <span class="datails">Username</span>
+              <input type="text" placeholder="enter your Username" required>
+          </div> -->
+        <div class="input_pox">
+          <span class="datails">Email</span>
+          <input type="text" placeholder="enter your Email" formControlName="email" required>
+        </div>
+        <div class="input_pox">
+          <span class="datails">Mobile Number</span>
+          <input type="text" placeholder="enter your Phone" formControlName="mobile" required>
+        </div>
+        <div class="input_pox">
+          <span class="datails">password</span>
+          <input type="text" placeholder="enter your Password" formControlName="password" required>
+
+        </div>
+        <!-- <div class="input_pox">
+              <span class="datails">Confirm Password</span>
+              <input type="text" placeholder="Confirm your Password" required>
+          </div> -->
+      </div>
+      <div class="input_pox">
+        <span class="datails">Gender</span>
+        <select class="form-select input" id="Gender" formControlName="gender">
+          <option selected value="">....</option>
+
+          <option class="g1">Male</option>
+          <option class="g1">Female</option>
+
+        </select>
+      </div>
+      <div class="button">
+        <input type="submit" value="Register" (click)="submit()">
+      </div>
+    </form>
+  </div>
+</div>
